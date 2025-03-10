@@ -22,10 +22,15 @@
         Title="Currency History"
         ContentTemplate="{DataTemplate views:HistoryPage}"
         Route="HistoryPage" />
+    
+    <ShellContent
+         Title="Settings"
+         ContentTemplate="{DataTemplate views:SettingsPage}"
+         Route="SettingsPage" />
 
     <ShellContent
         Title="About the App"
-        ContentTemplate="{DataTemplate views:SettingsPage}"
-        Route="SettingsPage" />
+        ContentTemplate="{DataTemplate views:AboutPage}"
+        Route="AboutPage" />
 
 </Shell>
