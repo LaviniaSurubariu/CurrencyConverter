@@ -13,4 +13,19 @@
         ContentTemplate="{DataTemplate views:MainPage}"
         Route="MainPage" />
 
+    <ShellContent
+        Title="Currency Converter"
+        ContentTemplate="{DataTemplate views:ConverterPage}"
+        Route="ConverterPage" />
+
+    <ShellContent
+        Title="Currency History"
+        ContentTemplate="{DataTemplate views:HistoryPage}"
+        Route="HistoryPage" />
+
+    <ShellContent
+        Title="About the App"
+        ContentTemplate="{DataTemplate views:SettingsPage}"
+        Route="SettingsPage" />
+
 </Shell>
