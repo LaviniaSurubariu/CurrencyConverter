@@ -3,10 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CursValutar.Views.ConverterPage"
              Title="Currency Converter">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid RowDefinitions="Auto, Auto, Auto, Auto, Auto" ColumnDefinitions="*,*"
+          Padding="16" RowSpacing="16">
+        <Label Grid.Row="0" Grid.Column="0" Text="Convert from"/>
+        <Picker x:Name="PickerSource" Grid.Row="0" Grid.Column="1" Title="Select currency"/>
+        
+        <Label Grid.Row="1" Grid.Column="0" Text="Convert in"/>
+        <Picker x:Name="PickerDestination" Grid.Row="1" Grid.Column="1" Title="Select currency"/>
+        
+        <Label Grid.Row="2" Grid.Column="0" Text="Value to convert"/>
+        <Entry x:Name="EntryValue" Keyboard="Numeric" Grid.Row="2" Grid.Column="1" Text="1"/>
+        
+        <Label Grid.Row="3" Grid.Column="0" Text="Result"/>
+        <Entry x:Name="EntryResult" Grid.Row="3" Grid.Column="1" Text="" IsReadOnly="True"/>
+
+        <Button Grid.Row="4" Grid.Column="0" 
+                Grid.ColumnSpan="2"
+                Text="Convert" Clicked="Button_Clicked"/>
+    </Grid>
 </ContentPage>
