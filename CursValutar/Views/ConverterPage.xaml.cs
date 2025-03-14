@@ -13,6 +13,7 @@ public partial class ConverterPage : ContentPage
 		currenciesList.Add("RON");
 		PickerDestination.ItemsSource = currenciesList;
 		PickerSource.ItemsSource = currenciesList;
+		PickerSource.SelectedIndex = 0;
 
     }
 
