@@ -4,8 +4,13 @@
              x:Class="CursValutar.Views.AboutPage"
              Title="About the App">
     <VerticalStackLayout>
+        <!--
+        Label -> App title Currency Converter 1.0
+        Image -> App Logo -> a png file saved in Resources/Images
+        Label -> app author
+        -->
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Currency Converter 1.0"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
